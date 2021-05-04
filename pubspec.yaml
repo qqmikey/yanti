@@ -1,0 +1,19 @@
+name: yanti
+description: Yet Another Nullable Type Implementation
+version: 1.0.0
+author: qqmikey <qqmikey@icloud.com>
+homepage: https://github.com/qqmikey/yanti
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
