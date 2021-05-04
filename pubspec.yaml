@@ -1,7 +1,6 @@
 name: yanti
 description: Yet Another Nullable Type Implementation
 version: 1.0.0
-author: qqmikey <qqmikey@icloud.com>
 homepage: https://github.com/qqmikey/yanti
 
 environment:
