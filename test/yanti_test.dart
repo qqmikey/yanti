@@ -6,9 +6,9 @@ class TestClass {
 
   String? value;
 
-  TestClass copyWith({Optional<String>? test}) {
+  TestClass copyWith({Optional<String>? value}) {
     return TestClass(
-      value: test.or(this.value),
+      value: value.or(this.value),
     );
   }
 }
@@ -21,7 +21,7 @@ void main() {
   });
 
   test('test copy with value', () {
-    final bar = foo.copyWith(test: Optional('bar'));
+    final bar = foo.copyWith(value: Optional('bar'));
     expect(bar.value, 'bar');
   });
 
@@ -31,12 +31,12 @@ void main() {
   });
 
   test('test copy with Optional.empty', () {
-    final bar = foo.copyWith(test: Optional.empty());
+    final bar = foo.copyWith(value: Optional.empty());
     expect(bar.value, null);
   });
 
   test('test copy with null value', () {
-    final bar = foo.copyWith(test: Optional(null));
+    final bar = foo.copyWith(value: Optional(null));
     expect(bar.value, null);
   });
 }
